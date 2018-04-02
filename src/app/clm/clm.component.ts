@@ -10,10 +10,16 @@ import { CLMS } from './model/mock-clms';
 export class ClmComponent implements OnInit {
 
   clms = CLMS;
+  selectedCLM: CLM = {id: undefined, name: undefined};
 
-  constructor() { }
+  constructor() {
+    console.log(this.clms);
+  }
 
   ngOnInit() {
   }
 
+  onSelect(clm: CLM) {
+    this.selectedCLM = clm;
+  }
 }

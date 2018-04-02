@@ -1,4 +1,4 @@
-import { CLM } from 'clm';
+import { CLM } from './clm';
 
 export const CLMS: CLM[] = [
   {id: 1, name: 'CISCO Router'},

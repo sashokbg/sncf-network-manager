@@ -2,13 +2,18 @@
   Listing CLM devices:
 <p>
 
-<div *ngFor="let clm of clms">
+<div>
+  ID:
+  {{selectedCLM.id}}
+</div>
+<div>
+  Name:
+  <input [(ngModel)]="selectedCLM.name" placeholder="name">
+</div>
+
+<hr>
+
+<div *ngFor="let clm of clms" (click)="onSelect(clm)">
   <div> ID: {{clm.id}} </div>
   <div> Name: {{clm.name}} </div>
-
-  <div>
-    <label>Name:
-      <input [(ngModel)]="clm.name" placeholder="name">
-    </label>
-  </div>
 </div>
