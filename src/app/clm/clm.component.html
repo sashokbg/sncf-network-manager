@@ -1,7 +1,8 @@
 <p>
   Listing CLM devices:
 <p>
-<div>
+
+<div *ngFor="let clm of clms">
   <div> ID: {{clm.id}} </div>
   <div> Name: {{clm.name}} </div>
 
@@ -10,5 +11,4 @@
       <input [(ngModel)]="clm.name" placeholder="name">
     </label>
   </div>
-
 </div>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CLM } from './model/clm';
+import { CLMS } from './model/mock-clms';
 
 @Component({
   selector: 'app-clm',
@@ -8,10 +9,7 @@ import { CLM } from './model/clm';
 })
 export class ClmComponent implements OnInit {
 
-  clm: CLM = {
-    id : 1,
-    name: 'CISCO Router'
-  };
+  clms = CLMS;
 
   constructor() { }
 
