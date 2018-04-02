@@ -1,7 +1,14 @@
 <p>
   Listing CLM devices:
 <p>
-<p>
-  ID: {{clm.id}} <br>
-  Name: {{clm.name}}
-</p>
+<div>
+  <div> ID: {{clm.id}} </div>
+  <div> Name: {{clm.name}} </div>
+
+  <div>
+    <label>Name:
+      <input [(ngModel)]="clm.name" placeholder="name">
+    </label>
+  </div>
+
+</div>
