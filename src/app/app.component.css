@@ -15,3 +15,10 @@
 .left-menu{
 
 }
+
+.center-content{
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-around;
+  padding: 5px;
+}
