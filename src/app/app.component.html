@@ -1,12 +1,14 @@
 <!--The content below is only a placeholder and can be replaced.-->
 
-<app-header></app-header>
-<app-left-menu></app-left-menu>
+<div class="container">
+  <app-header ngClass="header"></app-header>
+  <app-left-menu ngClass="left-menu"></app-left-menu>
+  <!--<app-content></app-content>-->
+  <div style="text-align:center; width: 100%;">
+    <h1>
+      Welcome to {{ title }}!
+    </h1>
+  </div>
 
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
+  <app-clm ngClass="clm-list"></app-clm>
 </div>
-
-<app-clm></app-clm>
