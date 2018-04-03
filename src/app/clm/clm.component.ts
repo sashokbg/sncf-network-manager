@@ -1,5 +1,5 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {ClmService} from '../clm.service';
+import {ClmService} from './clm.service';
 import {CLM} from './model/clm';
 import {Subscription} from 'rxjs/Subscription';
 
