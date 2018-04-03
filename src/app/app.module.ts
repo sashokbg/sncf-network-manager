@@ -8,6 +8,7 @@ import { ClmComponent } from './clm/clm.component';
 import { FormsModule } from '@angular/forms';
 import {LeftMenuComponent} from './left-menu/left-menu.component';
 import {ClmDetailsComponent} from './clm-details/clm-details.component';
+import {ClmService} from './clm.service';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,9 @@ import {ClmDetailsComponent} from './clm-details/clm-details.component';
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    ClmService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

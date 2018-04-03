@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { CLM } from './model/clm';
-import { CLMS } from './model/mock-clms';
+import { ClmService } from '../clm.service';
+import {CLM} from './model/clm';
 
 @Component({
   selector: 'app-clm',
@@ -9,14 +9,15 @@ import { CLMS } from './model/mock-clms';
 })
 export class ClmComponent implements OnInit {
 
-  clms = CLMS;
+  clms = undefined;
   selectedCLM: CLM = {id: undefined, name: undefined};
 
-  constructor() {
+  constructor(private clmService: ClmService) {
     console.log(this.clms);
   }
 
   ngOnInit() {
+    this.clms = this.clmService.getClms();
   }
 
   onSelect(clm: CLM) {
