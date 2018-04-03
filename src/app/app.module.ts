@@ -7,13 +7,15 @@ import { HeaderComponent } from './header/header.component';
 import { ClmComponent } from './clm/clm.component';
 import { FormsModule } from '@angular/forms';
 import {LeftMenuComponent} from './left-menu/left-menu.component';
+import {ClmDetailsComponent} from './clm-details/clm-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ClmComponent,
-    LeftMenuComponent
+    ClmDetailsComponent,
+    LeftMenuComponent,
   ],
   imports: [
     BrowserModule,

@@ -2,16 +2,7 @@
   Listing CLM devices:
 <p>
 
-<div class="">
-  <div>
-    ID:
-    {{selectedCLM.id}}
-  </div>
-  <div>
-    Name:
-    <input [(ngModel)]="selectedCLM.name" placeholder="name">
-  </div>
-</div>
+<app-clm-details [clm] = "selectedCLM"></app-clm-details>
 
 <hr>
 
