@@ -2,6 +2,7 @@ import {Component, OnDestroy, OnInit} from '@angular/core';
 import {ClmService} from './clm.service';
 import {CLM} from './model/clm';
 import {Subscription} from 'rxjs/Subscription';
+import {MessageService} from '../messages/message.service';
 
 @Component({
   selector: 'app-clm',
@@ -14,12 +15,14 @@ export class ClmComponent implements OnInit, OnDestroy {
   clms = undefined;
   selectedCLM: CLM = {id: undefined, name: undefined};
 
-  constructor(private clmService: ClmService) {
+  constructor(private clmService: ClmService, private messageService: MessageService) {
     console.log(this.clms);
   }
 
   ngOnInit() {
-    this.subs = this.clmService.getClms().subscribe(clms => this.clms = clms);
+    this.subs = this.clmService.getClms().subscribe((clms) => {
+      this.clms = clms; this.messageService.add('Received elements');
+    });
   }
 
   ngOnDestroy() {
