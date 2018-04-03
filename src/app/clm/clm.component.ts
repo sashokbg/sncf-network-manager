@@ -17,7 +17,7 @@ export class ClmComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.clms = this.clmService.getClms();
+    this.clmService.getClms().subscribe(clms => this.clms = clms);
   }
 
   onSelect(clm: CLM) {
