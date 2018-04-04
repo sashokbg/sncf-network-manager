@@ -11,9 +11,9 @@ import {ClmDetailsComponent} from './clm-details/clm-details.component';
 import {ClmService} from './clm/clm.service';
 import {MessageService} from './messages/message.service';
 import {MessageComponent} from './messages/message.component';
-import {RouterModule} from '@angular/router';
 import {AppRoutingModule} from './app-routing.module';
 import {HomeComponent} from './home/home.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,6 +28,7 @@ import {HomeComponent} from './home/home.component';
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [

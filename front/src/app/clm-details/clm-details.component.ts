@@ -32,7 +32,7 @@ export class ClmDetailsComponent implements OnInit{
       .subscribe(clm => {
         this.clm = clm;
         let message = 'Received element';
-        if (!clm){
+        if (!clm) {
           message = 'No element found';
         }
         this.messageService.add(message);
