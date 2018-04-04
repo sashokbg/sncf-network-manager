@@ -6,10 +6,10 @@ import {selector} from 'rxjs/operator/publish';
   templateUrl: './left-menu.component.html',
   styleUrls: ['./left-menu.component.css']
 })
-export class LeftMenuComponent implements OnInit{
-  constructor(){}
+export class LeftMenuComponent implements OnInit {
+  constructor() {}
 
-  ngOnInit(){
+  ngOnInit() {
 
   }
 }

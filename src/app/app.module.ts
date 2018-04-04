@@ -13,6 +13,7 @@ import {MessageService} from './messages/message.service';
 import {MessageComponent} from './messages/message.component';
 import {RouterModule} from '@angular/router';
 import {AppRoutingModule} from './app-routing.module';
+import {HomeComponent} from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {AppRoutingModule} from './app-routing.module';
     ClmComponent,
     ClmDetailsComponent,
     LeftMenuComponent,
-    MessageComponent
+    MessageComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
