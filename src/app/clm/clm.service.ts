@@ -17,4 +17,11 @@ export class ClmService {
     this.messageService.add('Fetching clms');
     return of(CLMS).delay(2000);
   }
+
+  getClm(id: number): Observable<CLM> {
+    this.messageService.add(`Fetching clms with id ${id}`);
+    return of(
+      CLMS.filter(element => element.id === id)[0]
+    ).delay(2000);
+  }
 }

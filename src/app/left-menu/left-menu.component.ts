@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import {selector} from 'rxjs/operator/publish';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-left-menu',
