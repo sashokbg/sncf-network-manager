@@ -14,6 +14,7 @@ import {MessageComponent} from './messages/message.component';
 import {AppRoutingModule} from './app-routing.module';
 import {HomeComponent} from './home/home.component';
 import {HttpClientModule} from '@angular/common/http';
+import {ClmCreateComponent} from './clm-create/clm-create.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {HttpClientModule} from '@angular/common/http';
     ClmDetailsComponent,
     LeftMenuComponent,
     MessageComponent,
-    HomeComponent
+    HomeComponent,
+    ClmCreateComponent
   ],
   imports: [
     BrowserModule,
