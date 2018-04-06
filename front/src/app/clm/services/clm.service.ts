@@ -1,8 +1,8 @@
 import {Injectable} from '@angular/core';
-import {CLM} from './model/clm';
+import {CLM} from '../model/clm';
 import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/operator/delay';
-import {MessageService} from '../messages/message.service';
+import {MessageService} from '../../messages/message.service';
 import {HttpClient} from '@angular/common/http';
 
 @Injectable()

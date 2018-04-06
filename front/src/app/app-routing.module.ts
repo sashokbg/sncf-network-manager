@@ -1,9 +1,9 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {ClmComponent} from './clm/clm.component';
+import {ClmComponent} from './clm/components/clm/clm.component';
 import {HomeComponent} from './home/home.component';
-import {ClmDetailsComponent} from './clm-details/clm-details.component';
-import {ClmCreateComponent} from './clm-create/clm-create.component';
+import {ClmDetailsComponent} from './clm/components/clm-details/clm-details.component';
+import {ClmCreateComponent} from './clm/components/clm-create/clm-create.component';
 
 const routes: Routes = [
   {path: 'clm', component: ClmComponent},

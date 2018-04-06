@@ -1,8 +1,8 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {ClmService} from './clm.service';
-import {CLM} from './model/clm';
+import {ClmService} from '../../services/clm.service';
+import {CLM} from '../../model/clm';
 import {Subscription} from 'rxjs/Subscription';
-import {MessageService} from '../messages/message.service';
+import {MessageService} from '../../../messages/message.service';
 
 @Component({
   selector: 'app-clm',

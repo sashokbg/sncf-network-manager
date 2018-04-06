@@ -1,9 +1,8 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {selector} from 'rxjs/operator/publish';
-import {CLM} from '../clm/model/clm';
+import {CLM} from '../../model/clm';
 import {ActivatedRoute} from '@angular/router';
-import {ClmService} from '../clm/clm.service';
-import {MessageService} from '../messages/message.service';
+import {ClmService} from '../../services/clm.service';
+import {MessageService} from '../../../messages/message.service';
 
 @Component({
   selector: 'app-clm-details',
